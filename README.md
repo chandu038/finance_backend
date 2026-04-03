@@ -115,18 +115,22 @@ After running the app, open in browser:
 
 Add the mentioned tokens in swagger-ui.html authorize and get authorized and check the functions
 Admin
+
 token:
 **eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBmaW5hbmNlLmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc3NTE1MDc5MiwiZXhwIjoxNzc1MjM3MTkyfQ.2sjqir4glsAaXdxlH1eP3JwGoCYX4IQsZ_SNSP5YjOKA3aBlNlFmrMFZMOfisl9b-BMdyBlwgavqia8OHrh3Mg**
 
-Viewer1:
+Viewer1
+
 token:
 **eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWV3ZXJAZmluYW5jZS5jb20iLCJyb2xlIjoiVklFV0VSIiwiaWF0IjoxNzc1MTI4NzkxLCJleHAiOjE3NzUyMTUxOTF9.MaJa9wUFcyo6NoOj23NGp2oogObDa-F8HYGP_isDIPemj38DQ_5oj6IeGq_42kxFSEcTldEfV3S4bhiMv5EiCQ**
 
-Viewer2:
+Viewer2
+
 token:
 **eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWV3ZXIyQGZpbmFuY2UuY29tIiwicm9sZSI6IlZJRVdFUiIsImlhdCI6MTc3NTE0OTkzNSwiZXhwIjoxNzc1MjM2MzM1fQ.efGzW_opd5TvW_qRzFqKhwCnj3-pjufVVUhE46v0JYuDZsxOWoZoDEYayg6kvQVuMxmoXhqJUIbNV66YouxOUg**
 
-Analyst:
+Analyst
+
 token:
 **eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbmFseXN0QGZpbmFuY2UuY29tIiwicm9sZSI6IkFOQUxZU1QiLCJpYXQiOjE3NzUxNTEwODQsImV4cCI6MTc3NTIzNzQ4NH0.t-FO6CHQ2Q0lGhoU2h9QcY_2LU1u9Y_E72L5MNSAb1nGHhiMnQMry-1iTce8ie1p3N5i7HipmGtAMDY0pXv0dg**
 
@@ -270,12 +274,43 @@ All errors return consistent JSON:
 
 ## Project Structure
 
+```
 src/main/java/com/finance/finance_backend/
-├── Config/         SecurityConfig.java, SwaggerConfig.java
-├── Controller/     AuthController, UserController, RecordController, DashboardController
-├── Dto/            8 DTO classes
-├── Exception/      GlobalExceptionHandler, ResourceNotFoundException
-├── Model/          User, FinancialRecord, Role, RecordType
-├── Repository/     UserRepository, FinancialRecordRepository
-├── Security/       JwtUtil, JwtFilter, CustomUserDetailsService
-└── Service/        UserService, FinancialRecordService, DashboardService
+
+├── Config/
+│   ├── SecurityConfig.java
+│   ├── SwaggerConfig.java
+│
+├── Controller/
+│   ├── AuthController.java
+│   ├── UserController.java
+│   ├── RecordController.java
+│   ├── DashboardController.java
+│
+├── Dto/
+│   ├── (8 DTO classes)
+│
+├── Exception/
+│   ├── GlobalExceptionHandler.java
+│   ├── ResourceNotFoundException.java
+│
+├── Model/
+│   ├── User.java
+│   ├── FinancialRecord.java
+│   ├── Role.java
+│   ├── RecordType.java
+│
+├── Repository/
+│   ├── UserRepository.java
+│   ├── FinancialRecordRepository.java
+│
+├── Security/
+│   ├── JwtUtil.java
+│   ├── JwtFilter.java
+│   ├── CustomUserDetailsService.java
+│
+└── Service/
+    ├── UserService.java
+    ├── FinancialRecordService.java
+    ├── DashboardService.java
+```
