@@ -112,6 +112,7 @@ Password is `password`.
 
 After running the app, open in browser:
 **http://localhost:1200/swagger-ui.html**
+
 Add the mentioned tokens in swagger-ui.html authorize and get authorized and check the functions
 Admin
 token:
