@@ -114,24 +114,21 @@ After running the app, open in browser:
 **http://localhost:1200/swagger-ui.html**
 
 Add the mentioned tokens in swagger-ui.html authorize and get authorized and check the functions
-Admin
 
-token:
+
+Admin token:
 **eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBmaW5hbmNlLmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc3NTE1MDc5MiwiZXhwIjoxNzc1MjM3MTkyfQ.2sjqir4glsAaXdxlH1eP3JwGoCYX4IQsZ_SNSP5YjOKA3aBlNlFmrMFZMOfisl9b-BMdyBlwgavqia8OHrh3Mg**
 
-Viewer1
 
-token:
+Viewer1 token:
 **eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWV3ZXJAZmluYW5jZS5jb20iLCJyb2xlIjoiVklFV0VSIiwiaWF0IjoxNzc1MTI4NzkxLCJleHAiOjE3NzUyMTUxOTF9.MaJa9wUFcyo6NoOj23NGp2oogObDa-F8HYGP_isDIPemj38DQ_5oj6IeGq_42kxFSEcTldEfV3S4bhiMv5EiCQ**
 
-Viewer2
 
-token:
+Viewer2 token:
 **eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2aWV3ZXIyQGZpbmFuY2UuY29tIiwicm9sZSI6IlZJRVdFUiIsImlhdCI6MTc3NTE0OTkzNSwiZXhwIjoxNzc1MjM2MzM1fQ.efGzW_opd5TvW_qRzFqKhwCnj3-pjufVVUhE46v0JYuDZsxOWoZoDEYayg6kvQVuMxmoXhqJUIbNV66YouxOUg**
 
-Analyst
 
-token:
+Analyst token:
 **eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbmFseXN0QGZpbmFuY2UuY29tIiwicm9sZSI6IkFOQUxZU1QiLCJpYXQiOjE3NzUxNTEwODQsImV4cCI6MTc3NTIzNzQ4NH0.t-FO6CHQ2Q0lGhoU2h9QcY_2LU1u9Y_E72L5MNSAb1nGHhiMnQMry-1iTce8ie1p3N5i7HipmGtAMDY0pXv0dg**
 
 To test protected endpoints in Swagger:
@@ -288,8 +285,15 @@ src/main/java/com/finance/finance_backend/
 │   ├── DashboardController.java
 │
 ├── Dto/
-│   ├── (8 DTO classes)
-│
+│   ├── AuthResponse.java
+│   ├── DashboardResponse.java
+|   ├── LoginRequestDto.java
+|   ├── MonthlyTrend.java
+|   ├── RecordRequest.java
+|   ├── RecordResponse.java
+|   ├── UserRequest.java
+|   ├── UserResponse.java
+|   
 ├── Exception/
 │   ├── GlobalExceptionHandler.java
 │   ├── ResourceNotFoundException.java
